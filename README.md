@@ -53,4 +53,4 @@ make -j4
 
 sudo make install
 
-注意：cmake的语句格式为cmake -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules <opencv_source_directory>，-j4选项表示使用4个线程编译，如果你的CPU有4个物理核心，可以加速编译，需要根据CPU的核心数配置。
+注意：cmake的语句格式为cmake -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules <opencv_source_directory>，注意对应好文件的地址，-j4选项表示使用4个线程编译，如果你的CPU有4个物理核心，可以加速编译，需要根据CPU的核心数配置。
