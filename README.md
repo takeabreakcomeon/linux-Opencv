@@ -1,4 +1,5 @@
 # linux-Opencv
+
 opencv的安装过程  调用摄像头 处理图像
 ## opencv 安装
 Linux从源码编译安装大体就是配置，编译，安装三步，下面看看OpenCV的编译安装过程。（安装过程参考：https://www.linuxidc.com/Linux/2017-02/141157.htm）
