@@ -7,19 +7,19 @@ Linux从源码编译安装大体就是配置，编译，安装三步，下面看
 
 本地编译软件并不能自动下载依赖环境，因此需要手动安装，执行以下命令即可
 
-sudo apt-get update
+$ sudo apt-get update
 
-sudo apt-get install build-essential
+$ sudo apt-get install build-essential
 
-sudo apt-get install cmake
+$ sudo apt-get install cmake
 
-sudo apt-get install libgtk2.0-dev
+$ sudo apt-get install libgtk2.0-dev
 
-sudo apt-get install pkg-config
+$ sudo apt-get install pkg-config
 
-sudo apt-get install python-dev python-numpy
+$ sudo apt-get install python-dev python-numpy
 
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev
+$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev
 
 
 ### 获取源代码
@@ -34,9 +34,9 @@ opencv_contrib：https://github.com/opencv/opencv_contrib
 
 这里我们使用默认的配置，安装路径默认为 /usr/local ，执行以下命令
 
-cd ~/opencv/opencv/release/
+$ cd ~/opencv/opencv/release/
 
-sudo cmake -D CMAKE_BUILD_TYPE=RELEASE 
+$ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE 
 	
    -D CMAKE_INSTALL_PREFIX=/usr/local 
    
@@ -46,11 +46,11 @@ sudo cmake -D CMAKE_BUILD_TYPE=RELEASE
   
    -D BUILD_EXAMPLES=ON ..
 
-sudo make -j4
+$ sudo make -j4
 
-sudo make install
+$ sudo make install
 
-sudo ldconfig
+$ sudo ldconfig
 
 注意：
 * CMAKE_BUILD_TYPE是编译方式
@@ -72,7 +72,7 @@ sudo ldconfig
 ### 检测是否找到usb设备（如果直接调用笔记本摄像头，跳过该步骤）
 执行以下命令：
 
-lsusb
+$ lsusb
 
 如果没检查到，可能是驱动没安装，进行内核编译增加UVC支持。（参考https://blog.csdn.net/qq_42041303/article/details/85470936）
 
@@ -80,7 +80,7 @@ lsusb
 
 执行以下命令
 
-ls -la /dev/vid* 
+$ ls -la /dev/vid* 
 
 可能会显示以下结果：
 
