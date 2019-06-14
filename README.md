@@ -67,7 +67,7 @@ sudo ldconfig
 
 * cmake的语句格式为cmake -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules <opencv_source_directory>，注意对应好文件的地址，-j4选项表示使用4个线程编译，如果你的CPU有4个物理核心，可以加速编译，需要根据CPU的核心数配置。
 
-##linux摄像头的调用
+## linux摄像头的调用
 
 ### 检测是否找到usb设备（如果直接调用笔记本摄像头，跳过该步骤）
 执行以下命令
