@@ -90,6 +90,22 @@ crw-rw----+ 1 root video 81, 3 Jul 18 13:28 /dev/video1
 
 其中 video0 是笔记本自带摄像头， video1为usb摄像头
 
+
+输入以下命令查看相机的参数：
+
+$ v4l2-ctl --list-devices
+
+可能会显示以下下结果：
+
+AR023ZWDR(Rev663F2P1left) (usb-0000:00:14.0-2):
+	/dev/video1
+
+HP HD Camera: HP HD Camera (usb-0000:00:14.0-9):
+	/dev/video0
+
+以上显示摄像机的具体型号，及相关参数
+
+
 ## 利用opencv调用摄像头
 
 
