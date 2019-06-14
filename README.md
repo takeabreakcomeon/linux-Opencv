@@ -88,7 +88,7 @@ crw-rw----+ 1 root video 81, 0 Feb 12  2016 /dev/video0
 
 crw-rw----+ 1 root video 81, 3 Jul 18 13:28 /dev/video1
 
-其中 video0 是tx2自带摄像头， video1为usb摄像头
+其中 video0 是笔记本自带摄像头， video1为usb摄像头
 
 ## 利用opencv调用摄像头
 
