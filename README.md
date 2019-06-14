@@ -28,7 +28,7 @@ opencv：https://github.com/opencv/opencv
 
 opencv_contrib：https://github.com/opencv/opencv_contrib
 
-为方便起见，新建一个opencv文件夹  将源代码解压到该文件件下。在解压opencv源码文件夹下新建一个release文件夹用于存放编译的临时文件，在release文件夹中进行编译。
+为方便起见，新建一个opencv文件夹  将源代码解压到该文件件下。可以在该文件夹下利用gitclone直接下载，也可以下载zip解压。在解压opencv源码的文件夹下新建一个release文件夹用于存放编译的临时文件，在release文件夹中进行编译。
 
 ### 编译安装
 
