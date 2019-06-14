@@ -70,18 +70,23 @@ sudo ldconfig
 ## linux摄像头的调用
 
 ### 检测是否找到usb设备（如果直接调用笔记本摄像头，跳过该步骤）
-执行以下命令
+执行以下命令：
+
 lsusb
-如果没检查到，可能是驱动没安装，进行内核编译增加UVC支持。（参考：https://blog.csdn.net/qq_42041303/article/details/85470936）
+
+如果没检查到，可能是驱动没安装，进行内核编译增加UVC支持。（参考https://blog.csdn.net/qq_42041303/article/details/85470936）
 
 ### 检查相机端口
+
 执行以下命令
 
 ls -la /dev/vid* 
 
 可能会显示以下结果：
+
 crw-rw----+ 1 root video 81, 0 Feb 12  2016 /dev/video0
 crw-rw----+ 1 root video 81, 3 Jul 18 13:28 /dev/video1
+
 其中 video0 是tx2自带摄像头， video1为usb摄像头
 
 ## 利用opencv调用摄像头
